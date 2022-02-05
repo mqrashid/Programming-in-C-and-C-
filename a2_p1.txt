@@ -1,0 +1,43 @@
+/*
+CH-230-A
+a1 p2.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+    //q1
+    double a;
+    double b;
+    double c;
+    char char_1;
+    char char_2;
+    scanf("%lf",&a);
+    scanf("%lf",&b);
+    printf("sum of doubles=%lf\n",a+b);
+    printf("difference of doubles=%lf\n",a-b);
+    c=a*a;
+    printf("square=%lf\n",c);
+    int num1,num2;
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+    printf("sum of integers=%d\n",num1+num2);
+    printf("product of integers=%d\n",num1*num2);
+
+    scanf("%c",&char_1);
+    scanf("%c",&char_2);
+    int sum_of_char=char_1+char_2;
+    int product_char=char_1*char_2;
+    char sum_as_char=char_1+char_2;
+    char prodcut_as_char=char_1*char_2;
+    printf("sum of chars=%d\n",sum_of_char);
+    printf("product of chars=%d\n",product_char);
+    printf("sum of chars= %c\n",sum_as_char);
+    printf("product of chars= %c\n",prodcut_as_char);
+    
+    
+
+    return 0;
+}

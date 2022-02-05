@@ -1,0 +1,44 @@
+/*
+CH-230-A
+a3 p9.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+double sum25(double v[], int n);
+//Function with prototype
+int main()
+{
+ //Determine sum of two values in array
+    int n;
+    double v[20];
+    scanf("%d", &n);
+    int i;
+    for (i=0; i<n; i++)
+    //for loop for inserting values in the array
+    {
+      scanf("%lf", &v[i]);
+    }
+    double result = sum25(v,n);
+    if(result!=-111)
+    {
+    printf("sum=%lf\n",result);
+    }
+    else
+    {
+    printf("One or both positions are invalid\n");
+    }
+}
+double sum25(double v[], int n)
+{
+    double sum = 0;
+    if (n < 6)
+    return -111;
+    else
+    {
+     sum = v[2] + v[5]; 
+     //summing position 2 and 5 values in v
+     return sum;
+    }
+}

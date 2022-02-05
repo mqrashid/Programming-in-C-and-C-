@@ -1,0 +1,16 @@
+/*
+CH-230-A
+a1 p2.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+
+#include <stdio.h>
+
+int main() 
+{
+  int result; /* The result of our calculation */
+result = (2 + 7)* 9 / 3;
+printf("The result is %d\n",result); //The variable which we wanted to print like result here was not asked by the compiler to print hence it did the calculation but did not display it. At the same time, it displays the garbage value 2091386488 for me which might be the value stored in an unknown variable which it hereby prints on screen. We simply solved the entire problem by putting the variable result telling the compiler to print our value on the screen. 
+return 0;
+}

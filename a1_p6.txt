@@ -1,0 +1,19 @@
+/*
+CH-230-A
+a1 p6.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+
+#include <stdio.h>
+
+int main() 
+{
+  char c='F';
+  c=c+3;
+  printf("Third character is=%c\n",c);
+  printf("ACSII is=%d\n",c);
+
+  //We basically stored the letter F in a unknown variable c and then used the assignment statement to print the third character after c and then we print the character and after this we print the ACSII code on the screen.
+
+}

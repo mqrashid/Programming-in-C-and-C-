@@ -1,0 +1,22 @@
+/*
+CH-230-A
+a3 p3.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+float convert(int cm);//another function making conversion
+int main()
+{
+  int cm;
+  float km;
+  scanf("%d",&cm); //user input
+  km =convert(cm);
+  printf("Result of conversion: %lf\n", km); //printing results
+  return 0;
+}
+  float convert(int cm)
+{
+  return (cm / 100000.0);
+}
+

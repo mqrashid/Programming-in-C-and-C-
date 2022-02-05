@@ -1,0 +1,20 @@
+/*
+CH-230-A
+a2 p7.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+// Infinite loop by bad coding 
+int i = 8;
+while (i <=8 && i>=4)  //proper range is given
+{                      //brackets were missing
+ printf("i is %d\n", i);
+ i--;  //decremator is used
+}
+printf("That’s it.\n");
+return 0;
+}

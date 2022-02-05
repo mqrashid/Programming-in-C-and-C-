@@ -1,0 +1,31 @@
+/*
+CH-230-A
+a2 p4.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+ //Area computations
+ float a, b, h; //taking 3 float values from user keyboard
+ scanf("%f",&a);
+ scanf("%f",&b);
+ scanf("%f",&h);
+
+ float square=a*a;
+ float rectangle=a*b;
+ float triangle=0.5*a*h;
+ float trapezoid=0.5*(a+b)*h;
+ 
+ printf("square area=%f\n",square);  //a*a is area of a square
+ 
+ printf("rectangle area=%f\n",rectangle); //mathematical formula for rectangle area
+ 
+ printf("triangle area=%f\n",triangle); //area of triangle
+ 
+ printf("trapezoid area=%f\n",trapezoid); //mathematical formula for area of this 2d shape
+
+return 0;
+}

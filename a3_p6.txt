@@ -1,0 +1,26 @@
+/*
+CH-230-A
+a3 p6.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include<stdio.h>
+float to_pounds(int kg, int g);
+//A function is defined here as said by question
+int main()
+{
+    int kg;
+    int g;
+    scanf("%d", &kg);
+    scanf("%d", &g);
+    float p;
+    p= to_pounds(kg,g);
+    //Calling the fucntion here
+    printf("Result of conversion: %f\n", p);
+    return 0;
+}
+float to_pounds(int kg, int g){
+    float result;
+    result= (kg+g/1000.0)*2.2;
+    return result;
+}

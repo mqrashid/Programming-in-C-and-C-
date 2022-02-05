@@ -1,0 +1,31 @@
+/*
+CH-230-A
+a2 p10.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+    int n; //decleration of varaible 
+    while(n<1)  
+    // repetitive loop for values until greater than 0 integer is achieved
+    scanf("%d", &n);
+    int counter = 1;
+    //declaring a varible counter and initialsing the variable 
+    while(counter!=n+1)
+    {
+        int hours = counter *24; //calculating hours
+        if(counter==1) //displaying the first day hours
+        {
+        printf("%d day = %d hours\n",counter,hours);
+        }
+        else
+        {
+        printf("%d days = %d hours\n", counter, hours);
+        }
+        counter++; //incrementor used
+    }
+    return 0;
+}

@@ -1,0 +1,20 @@
+/*
+CH-230-A
+a1 p3.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+
+#include <stdio.h>
+
+int main() 
+{
+float result; /*The result of the division */
+int a = 5;
+double b = 13.5; //13.5 is not a integer so we should use the varible type double here instead of a integer to remove the compiler error
+result = a / b;
+printf("The result is %lf\n",result); //we made %d to %lf which is basically the long float because our answer will not be an integer but in decimals which makes %d invalid and i used %lf for more accuracy.Hence, this compiler error is removed and the code works perfectly fine!!!
+return 0;
+}
+
+//in this code there were two compiler errors which can be seen in the comments next to the lines and now the code is working perfectly fine and displaying the correct ans of 0.370370 which is recurring in nature.

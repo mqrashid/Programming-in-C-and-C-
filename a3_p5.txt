@@ -1,0 +1,52 @@
+/*
+CH-230-A
+a3 p5.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+int main()
+{
+  char c;
+  int n, i;
+  double sum, temp[100],mean_average,fahrenheit;
+  printf("Enter a character\n");
+  scanf("%c", &c);
+  getchar(); //getting char input from keyboard 
+  printf("Please mention how many times to run?\n");
+  //not more than 100 values so asking user 
+  scanf("%d", &n);
+  for (i = 0; i < n; i++)
+    {
+      printf("Enter value ");
+      scanf("%lf", &temp[i]);
+      sum = sum + temp[i];
+    }
+    switch (c)
+    {
+    case 's':
+        printf("The sum is %lf\n", sum); 
+        //summing up all values in array
+        break;
+    case 'p':
+        for (i = 0; i < n; i++)
+        {
+            printf("Temperature in celsius of position %d of array:%lf\n", i, temp[i]);
+            // Printing on screen in celsius  
+        }
+        break;
+    case 't':
+        for (i = 0; i < n; i++)
+        {
+            fahrenheit = ((9.0/5.0) * temp[i])+32.0; //Converting into Farhenheit
+            printf("Temperature (fahrenheit) of position %d of array: %lf\n",i,fahrenheit);
+        }
+        break;
+    default:
+        mean_average = sum / n;
+        printf("Average is %lf\n",mean_average); 
+        //Calculating the mean/average 
+        break;
+    }
+    return 0;
+}

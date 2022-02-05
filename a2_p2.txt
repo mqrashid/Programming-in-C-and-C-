@@ -1,0 +1,20 @@
+/*
+CH-230-A
+a2 p2.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+  char c;
+  scanf("%c",&c); //taking input from user and storing in char variable
+  printf("character=%c\n",c);//printing c on screen
+  printf("decimal=%d\n",c);//printing in decimal notation
+  printf("octal=%o\n",c);//printing in octal format
+  printf("hexadecimal=%x\n",c);
+  /*printing in hexadecimal form using lower
+  case x to get letters in lowercase. */
+  return 0;
+}

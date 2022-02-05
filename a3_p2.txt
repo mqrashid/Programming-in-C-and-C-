@@ -1,0 +1,21 @@
+/*
+CH-230-A
+a3 p2.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char ch;
+    int n, i;   
+    scanf("%c", &ch); //taking inputs
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    { //Using loop for printing the pattern
+      printf("%c,", ch);
+      ch = ch - 1; // It will substract one from every iteration
+    }
+    return 0;
+}

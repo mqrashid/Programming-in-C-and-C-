@@ -1,0 +1,59 @@
+/*
+CH-230-A
+a3 p11.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    //two arrays one and two are defined 
+    char one[500];
+    char two[500];
+    fgets(one, sizeof(one), stdin);
+    fgets(two, sizeof(two), stdin);
+    one[strlen(one)-1] = '\0';
+    //removing last space from both arrays
+    two[strlen(two)-1] = '\0';
+
+    //Printing the length of both arrays
+    printf("length1=%d\n", (int)strlen(one));
+    printf("length2=%d\n", (int)strlen(two));
+    int result = strcmp(one, two);
+    //String comparison is performed 
+    printf("concatenation=%s\n", strcat(one, two));
+    char three[50];
+    strcpy(three, two); 
+    //copying second string to third one
+    printf("copy=%s\n", three);
+    if (result < 0)
+    {
+      printf("one is smaller than two\n");
+    }
+    else if (result == 0)
+    {
+      printf("one is equal to two\n");
+    }
+    else
+    {
+      printf("one is larger than two\n");
+    }
+    char c;
+    char *ptr;
+    scanf("%c", &c);
+    //searching for c in two 
+    ptr = strchr(two, c);
+    if (ptr == NULL)
+    {
+        printf("The character is not in the string\n");
+        //in case char not found 
+    }
+    else
+    {
+        printf("position=%d\n", (int)(ptr-two));
+        //for printing the position
+    }
+     return 0;
+}

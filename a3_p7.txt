@@ -1,0 +1,44 @@
+/*
+CH-230-A
+a3 p7.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+void print_form(int n,int m, char c);
+int main()
+{
+  // Printing a form
+    int n,m;
+    char c;
+    scanf("%d",&n);
+    scanf("%d",&m);
+    getchar();
+    scanf("%c",&c);
+    getchar();
+    print_form(n,m,c);
+    return 0;
+}
+
+void print_form(int n,int m, char c)
+{
+    int test;
+    test=m;                                   
+    for ( int i = 1; i <= n ; i++)
+    {    //working with the height of trapezium n
+        for ( int j= 1; j <= test; j++)
+        {    
+            printf("%c",c);
+        }
+        printf("\n"); 
+        //printing it on the screen
+        if (test == (n+m-1))
+        {  
+        // The loop works only until (n+m-1)
+         break; 
+         //break used for stopping it
+        }   
+        test=test+1;
+        //increment of test
+    }
+}

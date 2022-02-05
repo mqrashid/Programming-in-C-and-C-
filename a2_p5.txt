@@ -1,0 +1,21 @@
+/*
+CH-230-A
+a2 p5.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+ //Pointers and their content
+ int a; //a is declared an integer and user input taken using scanf
+ scanf("%d",&a);
+ printf("%d\n",a); //printed on screen
+ int *ptr_a; //pointer is declared
+ ptr_a= &a;  //pointer pointed towards a
+ printf ("Address in pointer: %p\n", ptr_a ) ;
+ *ptr_a= *ptr_a+5; //adding 5 to user input value
+ printf ("modified value of a: %d\n", *ptr_a ) ;
+ printf ("modified address of a: %p\n", ptr_a ) ;
+}

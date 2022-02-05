@@ -1,0 +1,39 @@
+/*
+CH-230-A
+a3 p10.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+float product(float a, float b);
+void productbyref(float a, float b, float *p);
+void modifybyref(float*a, float*b);
+
+int main()
+{
+    float a, b, p; //taking float values
+    scanf("%f%f", &a, &b); 
+    printf("%f\n", product(a, b));
+    productbyref(a, b, &p);
+    printf("%f\n", p);
+    modifybyref(&a, &b); //adding 3 to a and 11 to b and putting value in reference pointer
+    printf("a = %f\nb = %f\n",a,b );
+}
+float product(float a, float b)
+{
+  //finding product of two floats
+  float product = a*b;
+  return product;
+}
+void productbyref(float a, float b, float *p)
+  //finding product of two float values by reference
+{
+  *p = a*b;
+}
+void modifybyref(float *a, float *b)
+{
+  // add 3 to the first float and 11 to the second float
+    *a = *a + 3.0;
+    *b = *b + 11.0;
+}

@@ -1,0 +1,59 @@
+/*
+CH-230-A
+a3 p8.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+float sum(float array_1[], int n);
+float average(float array_1[], int n);
+
+int main()
+{  //computing sum and average
+   int n= 0; 
+   //b variable is intialised to 0
+   int i;
+   float array_1[10]; //taking max 10 inputs
+   for (i=0; i<10; i++) 
+    {  //for loop for taking max 10 inputs
+       n++;
+       scanf("%f", &array_1[i]);
+       if (array_1[i]==-99)
+       break;
+       //break used to stop taking inputs when -99 inserted
+    }
+  printf("Sum=%f\n",sum(array_1,n));
+  printf("Average=%f\n",average(array_1,n));
+}
+float sum(float array_1[],int n) 
+//sum function used to compute the sum 
+{   
+  int x;
+  float sum=0;
+  for (x=0; x<n; x++)
+    {
+     if(array_1[x]!=-99)
+     sum=sum+array_1[x];
+     else
+     break; //if -99 inserted it breaks
+    }
+   return sum;
+}
+float average(float array_1[],int n)
+{
+  int y;
+  int j=0;
+  float sum=0;
+  for (y=0; y<n; y++)
+   {
+    if(array_1[y]!=-99)
+    {
+      sum=sum+array_1[y];
+      j++;
+    }
+    else  
+    break; //if -99 inserted it breaks 
+    }
+  return sum/j; //for taking the average
+}

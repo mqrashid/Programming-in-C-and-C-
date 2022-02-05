@@ -1,0 +1,34 @@
+/*
+CH-230-A
+a2 p3.[c]
+Muhammad Qasim, Rashid
+murashid@jacobs-university.de
+*/
+#include <stdio.h>
+
+int main()
+{
+ //Time calculation
+ int weeks,days,hours; //declaring variables
+ printf("Enter integer number for number of weeks=");
+ scanf("%d",&weeks);//using scanf to take user input
+ printf("Weeks=%d\n",weeks);//printing user input along with weeks
+ printf("Enter integer number for number of days="); 
+ //same idea behind hours and days
+ scanf("%d",&days);
+ printf("Days=%d\n",days);
+ printf("Enter integer number for number of hours=");
+ scanf("%d",&hours);
+ printf("Hours=%d\n",hours);
+
+ int x;  /* x is another variable declared to calculate
+ the total number of hours */
+ x=(weeks*7*24)+(days*24)+hours; 
+ //mathematical formula derived to get total number of hours
+ printf("Total Number of Hours=%d",x);//printing x on screen
+
+/*Based on the assumption that the input is correct as guided
+by the question.Had the input be entered correctly some changes
+in the program would have been done but it was not the requirement
+of the question! */
+}
